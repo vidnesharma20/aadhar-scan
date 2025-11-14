@@ -35,8 +35,7 @@ Just **Scan → Extract → Save.**
 
 ## 🌐 **Live Demo (Video)**
 
-➡️ *Add your video link here*
-`https://your-demo-video-link.com`
+➡️ https://github.com/user-attachments/assets/994d1a9d-8cbf-41b7-945e-d1215889f100
 
 ---
 
