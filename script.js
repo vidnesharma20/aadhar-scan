@@ -952,3 +952,24 @@ if (document.readyState === 'loading') {
 } else {
     initCamera();
 }
+async function initCamera() {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({
+            video: {
+                facingMode: { ideal: "environment" },
+                width: { ideal: 1280 },
+                height: { ideal: 720 }
+            },
+            audio: false
+        });
+
+        video.srcObject = stream;
+        await video.play();
+
+        console.log("Camera started");
+    } catch (err) {
+        console.error("Camera error:", err);
+        alert("Camera access denied. Please allow camera permission.");
+    }
+}
+
